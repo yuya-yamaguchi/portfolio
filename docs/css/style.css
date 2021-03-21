@@ -1,0 +1,198 @@
+/* reset.css */
+html{
+	color:#000;
+	background:#FFF;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,
+img {
+	border:0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,
+ul {
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,
+q:after {
+	content:'';
+}
+abbr,
+acronym {
+	border:0;
+	font-variant:normal;
+}
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%;
+}
+legend {
+	color:#000;
+}
+
+#portfolio-site {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 100px; /* 仮 */
+}
+.page-top {
+  width: 100%;
+  background: linear-gradient(30deg, rgb(20, 17, 204), #6ce49e);
+}
+.page-top--title {
+  text-align: center;
+  font-size: 4rem;
+  padding: 150px 0;
+  font-weight: bold;
+}
+
+.page-body {
+
+}
+.block-container {
+  margin: 100px 20px;
+}
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sub-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.profile-table {
+  background: aquamarine;
+  margin: 0 auto;
+}
+.skill-block {
+  border: 1px solid;
+  width: 45%;
+}
+.skill-table {
+  background: aquamarine;
+  margin: 0 auto;
+}
+.skill-title {
+  text-align: center;
+  margin: 10px;
+}
+.skill-table--head {
+  text-align: center;
+}
+.skill-table--value {
+  height: 30px;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.product {
+  margin: 30px auto;
+}
+.kyoon-app-img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.product-info {
+  margin: 0 auto;
+  width: 500px;
+}
+.product-info p {
+  margin: 10px;
+}
+i {
+  font-size: 24px;
+  margin-right: 10px
+}
+.explain {
+  font-size: 0.9rem;
+}
+#product-info--hide {
+  display: none;
+}
+#kyoon-more-btn {
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+#kyoon-more-btn:hover {
+  opacity: 0.8;
+}
