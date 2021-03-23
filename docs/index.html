@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
   <script src="js/script.js"></script>
-  <title>Yuya Yamaguchi ポートフォリオ</title>
+  <title>y-yamaguchi's portfolio</title>
 </head>
 <body>
   <div id="portfolio-site">
@@ -37,7 +37,7 @@
       <div class="skill block-container">
         <div class="justify-center">
           <i class="fas fa-globe-asia"></i>
-          <h1 class="main-title">SKILLS</h1>
+          <h1 class="main-title">Skills</h1>
         </div>
         <div class="space-between">
           <div class="skill-block">
@@ -141,7 +141,11 @@
                 <td>1年</td>
               </tr>
               <tr class="skill-table--value">
-                <td>Excel</td>
+                <td>Microsoft Excel</td>
+                <td>5年</td>
+              </tr>
+              <tr class="skill-table--value">
+                <td>Microsoft Access</td>
                 <td>5年</td>
               </tr>
               <tr class="skill-table--value">
@@ -153,8 +157,47 @@
         </div>
         <div class="works block-container">
           <div class="justify-center">
-            <i class="fas fa-user-tie"></i>
+            <i class="fas fa-building"></i>
             <h1 class="main-title">Works</h1>
+          </div>
+          <div class="company">
+            <p class="company--name">株式会社天晴データネット</p>
+            <p class="company--period">2014年4月〜2019年8月</p>
+            <div class="company--explain">
+              <p class="company--explain--outline">
+                ネット銀行の保守運用開発を担当。<br>
+                主にオンライン処理のサーバサイド開発やバッチ処理のシステム開発を行い、<br>
+                開発、テスト、設計、顧客折衝等のフェーズを担当。
+              </p>
+              <p>【開発環境】</p>
+              <p>
+                言語:C / DB:Oracle
+              </p>
+              <p>【担当工程】</p>
+              <p>
+                開発 / 単体テスト / 結合テスト / 外部設計 / 詳細設計
+              </p>
+            </div>
+            <div id="tdn-more-btn" class="details-btn">▼ 詳細を表示</div>
+          </div>
+          <div>
+            <p class="company--name">株式会社トップゲート</p>
+            <p class="company--period">2020年4月〜2020年11月</p>
+            <div class="company--explain">
+              <p class="company--explain">
+                航空会社の社内システムの保守運用開発を担当。<br>
+                主に顧客折衝や進捗管理等のマネジメント業務を担当。
+              </p>
+              <p>【開発環境】</p>
+              <p>
+                言語:Go / DB:Datastore / インフラ:GAE(FE)
+              </p>
+              <p>【担当工程】</p>
+              <p>
+                単体テスト / 結合テスト
+              </p>
+            </div>
+            <div id="tdn-more-btn" class="details-btn">▼ 詳細を表示</div>
           </div>
         </div>
         <div class="products block-container">
@@ -167,25 +210,38 @@
               <img src="images/kyoon_circle_app_img.png" alt="" class="kyoon-app-img">
               <h3 class="sub-title">京音サークル用Webサイト</h3>
             </a>
+            <a href="https://github.com/yuya-yamaguchi/kyoon_circle_app" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
             <div class="product-info">
-              <p class="explain">自身が所属している音楽サークル用に作成したサイト。<br>
-                サークルの代表が所有しているスタジオの予約管理、イベントの開催などをWebにて取りまとめられるようにするため作成。
-              </p>
-              <p class="explain">【使用技術】</p>
-              <p class="explain">HTML / CSS / VueJs / Ruby on Rails / Docker / AWS(EC2, ALB, Route53)</p>
-              <div id="product-info--hide">
-                aaa
+              <div class="product-info--explain">
+                <p>自身が所属している音楽サークル用に作成したサイト。<br>
+                  サークルの代表が所有しているスタジオの予約管理、イベントの開催などをWebにて取りまとめられるようにするため作成。（実運用中）
+                </p>
+                <p>【使用技術】</p>
+                <p>HTML / SCSS / VueJs / Ruby on Rails / Docker / AWS(EC2, ALB, Route53)</p>
+                <div id="product-info--hide">
+                  <p>【機能一覧】</p>
+                  <p>■認証機能</p>
+                  <p>
+                    ユーザの新規登録、ログイン、ログアウト等の処理を実装。
+                    パスワード失念時は登録したメールアドレスに再設定用のトークン付URLを送信し、
+                    パスワードの再設定ができるよう実装。
+                  </p>
+                  <p>新規ユーザ登録 / ログイン / ログアウト / パスワード変更 / パスワード再設定</p>
+                </div>
               </div>
-              <div id="kyoon-more-btn">▼ 詳細を表示</div>
+              <div id="kyoon-more-btn" class="details-btn">▼ 詳細を表示</div>
             </div>
           </div>
           <div>
             <img src="images/kyoon_circle_app_img.png" alt="" class="kyoon-app-img">
             <h3 class="sub-title">ポートフォリオサイト</h3>
             <div class="product-info">
-              <p class="explain">自身のポートフォリオサイト。</p>
-              <p class="explain">【使用技術】</p>
-              <p class="explain">HTML / CSS / JavaScript / GitHub Pages</p>
+              <p>当サイト。自身の職務経歴、成果物等を掲載。</p>
+              <p>【使用技術】</p>
+              <p>HTML / CSS / JavaScript / GitHub Pages</p>
             </div>
           </div>
         </div>
