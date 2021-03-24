@@ -52,11 +52,6 @@ var {
 	font-weight:normal;
 }
 
-ol,
-ul {
-	list-style:none;
-}
-
 caption,
 th {
 	text-align:left;
@@ -152,7 +147,6 @@ legend {
 .space-between {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
 }
 .justify-center {
   display: flex;
@@ -160,13 +154,34 @@ legend {
   align-items: center;
   margin: 10px;
 }
+
+/* work */
+.company-matter {
+  margin-bottom: 20px;
+}
+.company-matter--top {
+  border-bottom: 1px solid;
+  background: lightgray;
+  font-weight: bold;
+}
+.company-matter--info {
+  justify-content: flex-start;
+  display: flex;
+  color: #888;
+  font-size: 0.8rem;
+}
+.company-matter--body {
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
 /* product */
 .product {
   margin: 30px auto;
 }
 .kyoon-app-img {
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 .product-info {
@@ -193,7 +208,16 @@ i {
   margin: 5px auto;
   color: #333;
 }
-
+.product-info--func {
+  margin-bottom: 30px;
+}
+.product-info--func--name {
+  
+}
+.product-info--func--details {
+  border: 1px solid #888;
+  padding: 10px;
+}
 
 .company {
   margin: 30px 0;
@@ -221,4 +245,13 @@ i {
   text-align: center;
   color: #888;
   margin: 10px 0;
+}
+
+.restriction-box {
+  background: #333;
+  color: #FFF;
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 5px;
+  margin: 10px 0 5px;
 }

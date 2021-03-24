@@ -8,14 +8,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
   <script src="js/script.js"></script>
-  <title>y-yamaguchi's portfolio</title>
+  <title>yamaguchi yuya's portfolio</title>
 </head>
 <body>
   <div id="portfolio-site">
     <div class="page-top">
-      <h1 class="page-top--title">Portfolio</h1>
+      <h1 class="page-top--title">
+        Yamaguchi Yuya's <br>Portfolio
+      </h1>
     </div>
     <div class="page-body">
+      <div style="color: #888; font-size: 0.9rem; text-align: right;">更新日：2021年3月24日</div>
       <div class="profile block-container">
         <div class="justify-center">
           <i class="fas fa-user"></i>
@@ -28,8 +31,16 @@
               <td>山口 友也</td>
             </tr>
             <tr>
-              <th>生年月日</th>
-              <td>1991年8月21日</td>
+              <th>生年月日　</th>
+              <td>1991年8月21日（29歳）</td>
+            </tr>
+            <tr>
+              <th>出身</th>
+              <td>福井県（現在は都内在住）</td>
+            </tr>
+            <tr>
+              <th>趣味</th>
+              <td>ギター、スノーボード</td>
             </tr>
           </table>
         </div>
@@ -169,14 +180,20 @@
                 主にオンライン処理のサーバサイド開発やバッチ処理のシステム開発を行い、<br>
                 開発、テスト、設計、顧客折衝等のフェーズを担当。
               </p>
-              <p>【開発環境】</p>
+              <p class="restriction-box">開発環境</p>
               <p>
                 言語:C / DB:Oracle
               </p>
-              <p>【担当工程】</p>
+              <p class="restriction-box">担当工程</p>
               <p>
                 開発 / 単体テスト / 結合テスト / 外部設計 / 詳細設計
               </p>
+              <div class="company--explain-hide">
+                <p class="restriction-box">担当案件</p>
+                <div class="company-matter">
+                  <p>開発案件</p>
+                </div>
+              </div>
             </div>
             <div id="tdn-more-btn" class="details-btn">▼ 詳細を表示</div>
           </div>
@@ -188,14 +205,31 @@
                 航空会社の社内システムの保守運用開発を担当。<br>
                 主に顧客折衝や進捗管理等のマネジメント業務を担当。
               </p>
-              <p>【開発環境】</p>
+              <p class="restriction-box">開発環境</p>
               <p>
                 言語:Go / DB:Datastore / インフラ:GAE(FE)
               </p>
-              <p>【担当工程】</p>
+              <p class="restriction-box">担当工程</p>
               <p>
                 単体テスト / 結合テスト
               </p>
+              <div class="company--explain-hide">
+                <p class="restriction-box">担当案件</p>
+                <div class="company-matter">
+                  <div class="company-matter--top">
+                    アルコールチェックアプリのパラメータ変更に伴う修正
+                  </div>
+                  <div class="company-matter--info">
+                    <p>2020年6月〜8月 / 要員:1〜2名 / 工数:約3人月</p>
+                  </div>
+                  <div class="company-matter--body">
+                    <p>＜案件概要＞</p>
+                    <p>アルコールチェックアプリ（外部アプリ）のインパラメータ変更に伴い、判定処理の修正、Datastoreのプロパティ変更、アウトパラメータの設定値変更等を実施</p>
+                    <p>＜担当内容＞</p>
+                    <p>単体テスト / 結合テスト / 進捗管理 / リリース作業 / 顧客折衝</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div id="tdn-more-btn" class="details-btn">▼ 詳細を表示</div>
           </div>
@@ -208,7 +242,7 @@
           <div class="product">
             <a href="http://studio-hummingbird.com" target="_blank">
               <img src="images/kyoon_circle_app_img.png" alt="" class="kyoon-app-img">
-              <h3 class="sub-title">京音サークル用Webサイト</h3>
+              <h3 class="sub-title">音楽サークル用Webサイト</h3>
             </a>
             <a href="https://github.com/yuya-yamaguchi/kyoon_circle_app" target="_blank" class="github-link">
               <i class="fab fa-github"></i>
@@ -216,20 +250,68 @@
             </a>
             <div class="product-info">
               <div class="product-info--explain">
-                <p>自身が所属している音楽サークル用に作成したサイト。<br>
-                  サークルの代表が所有しているスタジオの予約管理、イベントの開催などをWebにて取りまとめられるようにするため作成。（実運用中）
+                <p>
+                  自身が所属している音楽サークル用に作成したサイト。<br>
+                  サークルの代表が所有しているスタジオの予約管理、イベントの開催などをWebにて取りまとめられるようにするため作成。<br>
+                  フロントエンドはVueJsを用いたSPA、バックエンドはRailsをAPIサーバとして使用し、Dockerコンテナ上で起動。<br>
+                  ユーザ（サークルメンバ）からフィードバックをもらいながらUI/UXの改善、機能の追加・修正等を適宜実施。
                 </p>
-                <p>【使用技術】</p>
+                <p class="restriction-box">使用技術</p>
                 <p>HTML / SCSS / VueJs / Ruby on Rails / Docker / AWS(EC2, ALB, Route53)</p>
                 <div id="product-info--hide">
-                  <p>【機能一覧】</p>
-                  <p>■認証機能</p>
-                  <p>
-                    ユーザの新規登録、ログイン、ログアウト等の処理を実装。
-                    パスワード失念時は登録したメールアドレスに再設定用のトークン付URLを送信し、
-                    パスワードの再設定ができるよう実装。
-                  </p>
-                  <p>新規ユーザ登録 / ログイン / ログアウト / パスワード変更 / パスワード再設定</p>
+                  <p class="restriction-box">機能一覧</p>
+                  <div class="product-info--func">
+                    <p class="product-info--func--name">認証機能</p>
+                    <div class="product-info--func--details">
+                      <p>新規ユーザ登録 / ログイン / ログアウト / パスワード変更 / パスワード再設定</p>
+                      <li>パスワードはbcryptにて暗号化し保存</li>
+                      <li>Vuexにて認証用トークンを保存し、ログイン状態を維持</li>
+                      <li>パスワード失念時は登録メールアドレスに再設定用のトークン付URLを送信し、再設定可</li>
+                    </div>
+                  </div>
+                  <div class="product-info--func">
+                    <p class="product-info--func--name">スタジオ予約機能</p>
+                    <div class="product-info--func--details">
+                      <p>
+                        サークル代表が所持しているスタジオ利用時に予約できる機能
+                      </p>
+                      <p>スタジオ予約、予約キャンセル / スタジオ予約一覧表示 / スタジオ予約確認（管理者用）</p>
+                      <li>スタジオ予約が行われた際、LINEのMessaging APIを利用しグループラインへ通知</li>
+                      <li>予約の重複が起こらないようバックエンド側でチェック処理を実装（他日時の整合性等のチェックも実装）</li>
+                    </div>
+                  </div>
+                  <div class="product-info--func">
+                    <p class="product-info--func--name">宿泊機能</p>
+                    <div class="product-info--func--details">
+                      <p>
+                        サークル代表の空き部屋（2部屋）へ宿泊時に予約できる機能
+                      </p>
+                      <p>宿泊予約、予約キャンセル / 宿泊予約一覧表示 / 宿泊予約確認（管理者用）</p>
+                      <li>予約する部屋を選択して予約が可能</li>
+                      <li>予約する部屋を選択しない場合、空いている部屋をシステムで判断し予約</li>
+                    </div>
+                  </div>
+                  <div class="product-info--func">
+                    <p class="product-info--func--name">イベント機能</p>
+                    <div class="product-info--func--details">
+                      <p>
+                        セッション、飲み会等のイベントを開催する機能
+                      </p>
+                      <p>イベント登録、編集、削除 / イベント一覧表示、詳細表示 / イベントへの参加、参加キャンセル / 参加イベント一覧表示 / イベントへのコメント新規投稿、編集、削除</p>
+                      <li>イベントが新規登録された際、LINEのMessaging APIを利用しグループラインへ通知</li>
+                      <li>セッションイベントの場合、曲の追加や各パートへのエントリーが可能</li>
+                    </div>
+                  </div>
+                  <div class="product-info--func">
+                    <p class="product-info--func--name">お知らせ機能</p>
+                    <div class="product-info--func--details">
+                      <p>
+                        機能の追加、サークル運用にあたってのお知らせ等を通知するための機能
+                      </p>
+                      <p>お知らせ登録、編集、削除 / お知らせ一覧表示、詳細表示</p>
+                      <li>お知らせが新規登録された際、LINEのMessaging APIを利用しグループラインへ通知</li>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div id="kyoon-more-btn" class="details-btn">▼ 詳細を表示</div>
@@ -238,6 +320,10 @@
           <div>
             <img src="images/kyoon_circle_app_img.png" alt="" class="kyoon-app-img">
             <h3 class="sub-title">ポートフォリオサイト</h3>
+            <a href="https://github.com/yuya-yamaguchi/portfolio" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
             <div class="product-info">
               <p>当サイト。自身の職務経歴、成果物等を掲載。</p>
               <p>【使用技術】</p>
