@@ -52,6 +52,12 @@
   font-size: 1.5rem;
   color: #333;
 }
+.sub-item {
+  text-decoration: underline;
+}
+.sub-explain {
+  margin: 5px 0 0 10px;
+}
 .profile-table {
   margin: 0 auto;
 }
