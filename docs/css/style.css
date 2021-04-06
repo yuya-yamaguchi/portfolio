@@ -61,6 +61,11 @@
 .profile-table {
   margin: 0 auto;
 }
+.my-comment {
+  font-size: 0.9rem;
+  margin: 20px;
+  text-align: center;
+}
 .skill-block {
   border: 1px solid;
   width: 45%;
