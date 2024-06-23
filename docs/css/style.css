@@ -2,7 +2,41 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
+}
+
+/* header */
+.header {
+  position: fixed;
+  background-color: rgba(0,0,0,.8);
+  height: 50px;
+  width: 100%;
+  color: #000;
+  backdrop-filter: blur(4px);
+}
+.header__items {
+  display: flex;
+  justify-content: space-around;
+}
+.header-button {
+  color: #FFF;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  line-height: 50px;
+  border-left: 1px solid;
+  width: 100%;
+  cursor: pointer;
+  
+}
+.sp {
+  display: none;
+}
+
+.update-date {
+  color: #333;
+  font-size: 0.9rem;
+  text-align: right;
 }
 .page-top {
   width: 100%;
@@ -14,43 +48,24 @@
   padding: 100px 0;
   font-weight: bold;
 }
-.anker-links {
-  display: flex;
-  justify-content: space-around;
-  width: 800px;
-  margin: 0 auto;
-  padding-bottom: 30px;
-}
-.anker-link {
-  background: #333;
-  color: #FFF;
-  width: 100px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 5px 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
+
 .anker-link:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .page-body {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
+  padding-top: 55px;
 }
 .block-container {
-  margin: 100px 20px;
+  margin: 40px 20px;
+  padding-top: 50px;
 }
 .main-title {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-}
-.sub-title {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #333;
 }
 .sub-item {
   text-decoration: underline;
@@ -61,10 +76,8 @@
 .profile-table {
   margin: 0 auto;
 }
-.my-comment {
-  font-size: 0.9rem;
-  margin: 20px;
-  text-align: center;
+.skill-container {
+  margin-bottom: 20px;
 }
 .skill-block {
   border: 1px solid;
@@ -84,6 +97,20 @@
 .skill-table--value {
   height: 30px;
 }
+.skill-item {
+  background-color: rgba(0,0,0,.8);
+  color: #FFF;
+  padding: 4px 12px;
+  border-radius: 10px;
+  margin: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.skill-items {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 .space-between {
   display: flex;
   justify-content: space-between;
@@ -94,11 +121,24 @@
   align-items: center;
   margin: 10px;
 }
-.jitsumu-ari {
-  border-bottom: solid 2px orange;
-}
 
 /* work */
+.company {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px 0 40px 0;
+  /* border-bottom: 1px solid #888; */
+}
+.company__period {
+  width: 90px;
+  min-width: 90px;
+  font-size: 0.8rem;
+  color: #333;
+}
+.company__main {
+  /* width: 300px; */
+}
 .company-matter {
   margin-bottom: 20px;
   padding: 10px;
@@ -121,38 +161,10 @@
 .company-matter--body--block {
   margin: 0 5px 10px 5px;
 }
-#tdn-info-hide {
-  display: none;
-}
-#tg-info-hide {
-  display: none;
-}
 
-/* product */
-.product {
-  margin: 0 auto;
-  margin-bottom: 80px;
-}
-.kyoon-app-img {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 5px 5px 5px rgba(70, 70, 70, 0.5);
-  margin-bottom: 10px;
-}
-.product-info {
-  margin: 0 auto;
-}
-.product-info--explain {
-  margin: 10px;
-  font-size: 0.9rem;
-}
 i {
   font-size: 24px;
   margin-right: 10px
-}
-#product-info--hide {
-  display: none;
 }
 .github-link {
   display: block;
@@ -160,19 +172,8 @@ i {
   margin: 5px auto;
   color: #333;
 }
-.product-info--func {
-  margin-bottom: 30px;
-}
-.product-info--func--details {
-  border: 1px solid #888;
-  padding: 10px;
-}
 
-.company {
-  margin: 30px 0;
-  border-bottom: 1px solid #888;
-}
-.company--name {
+.sub-title {
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -186,17 +187,6 @@ i {
 }
 .company--explain--outline {
   margin: 10px 0;
-}
-
-.details-btn {
-  cursor: pointer;
-  font-weight: bold;
-  text-align: center;
-  color: #888;
-  margin: 10px 0;
-}
-.details-btn:hover {
-  opacity: 0.8;
 }
 
 .restriction-box {
@@ -214,11 +204,23 @@ footer {
   color: #FFF;
   padding: 30px 0;
 }
-.footer-anker-links {
-  margin: 20px;
-}
-.footer-anker-link {
-  color: #FFF;
-  font-size: 0.8rem;
-  margin: 0 20px;
+@media (max-width: 500px) {
+  /* 横幅が320px以下の場合に適用するスタイル */
+  .header-button {
+    font-size: 12px;
+  }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .company__period {
+    width: 100%;
+    min-width: 100%;
+  }
+  .company {
+    border-top: 1px solid #888;
+    padding-top: 10px;
+  }
 }
