@@ -1,41 +1,27 @@
 document.addEventListener("DOMContentLoaded", function(){
-  const kyoonMoreBtn = document.getElementById('kyoon-more-btn')
-  const tdnMoreBtn = document.getElementById('tdn-more-btn')
-  const tgMoreBtn = document.getElementById('tg-more-btn')
-  // 京音サイト詳細ボタンクリック
-  kyoonMoreBtn.addEventListener('click', function() {
-    const target = document.getElementById('product-info--hide');
-    if (target.style.display == 'block') {
-      target.style.display = 'none';
-      kyoonMoreBtn.textContent = '▼ 詳細を表示'
-    }
-    else {
-      target.style.display = 'block';
-      kyoonMoreBtn.textContent = '▲ 詳細を閉じる'
-    };
+  const profileBtn = document.getElementById('profileBtn')
+  const skillBtn = document.getElementById('skillBtn')
+  const workBtn = document.getElementById('workBtn')
+  const contactBtn = document.getElementById('contactBtn')
+
+  profileBtn.addEventListener('click', function() {
+    scrollToAnker('profile')
   })
-  // TDN詳細ボタンクリック
-  tdnMoreBtn.addEventListener('click', function() {
-    const target = document.getElementById('tdn-info-hide');
-    if (target.style.display == 'block') {
-      target.style.display = 'none';
-      tdnMoreBtn.textContent = '▼ 詳細を表示'
-    }
-    else {
-      target.style.display = 'block';
-      tdnMoreBtn.textContent = '▲ 詳細を閉じる'
-    };
+  skillBtn.addEventListener('click', function() {
+    scrollToAnker('skill')
   })
-  // TG詳細ボタンクリック
-  tgMoreBtn.addEventListener('click', function() {
-    const target = document.getElementById('tg-info-hide');
-    if (target.style.display == 'block') {
-      target.style.display = 'none';
-      tgMoreBtn.textContent = '▼ 詳細を表示'
-    }
-    else {
-      target.style.display = 'block';
-      tgMoreBtn.textContent = '▲ 詳細を閉じる'
-    };
+  workBtn.addEventListener('click', function() {
+    scrollToAnker('work')
   })
+  contactBtn.addEventListener('click', function() {
+    scrollToAnker('contact')
+  })
+
+  function scrollToAnker(targetId) {
+    console.log('click')
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth'});
+    }
+  }
 }, false);
