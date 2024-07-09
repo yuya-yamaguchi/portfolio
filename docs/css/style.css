@@ -177,6 +177,10 @@ i {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.sub-title a {
+  color: black;
+}
+
 .company--period {
   font-size: 0.8rem;
   color: #888;
